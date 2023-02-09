@@ -76,7 +76,7 @@ void loop() {
     tone(BUZZER_PIN, 440);
     digitalWrite(RED_LED, HIGH);
     digitalWrite(GREEN_LED, LOW);
-  } else {
+  } else if(distance > MAX_DISTANCE){
     noTone(BUZZER_PIN);
     digitalWrite(RED_LED, LOW);
     digitalWrite(GREEN_LED, HIGH);
